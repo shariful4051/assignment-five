@@ -19,9 +19,9 @@
       
      
         <div class="flex justify-between items-center sm:gap-5">
-            <div class="flex justify-between items-center gap-1 bg-[#41ff6b1a] px-5 py-3 rounded-3xl " ><span class="text-[#000000] font-bold mr-1">0</span> <span><img class="w-8 h-8" src="assets/heart.png" alt=""></span></div>
-            <div class="flex justify-between items-center gap-1 bg-[#41ff6b1a] px-5 py-3 rounded-3xl" ><span class="text-[#000000] font-bold mr-1">100</span> <span><img class="w-6 h-6" src="assets/coin.png" alt=""></span></div>
-            <div><button class=" bg-[#00a63e]  px-5 py-3 rounded-3xl font-semibold text-white "><span >2</span> <span>Copy</span></button></div>
+            <div class="flex justify-between items-center gap-1 bg-[#41ff6b1a] px-5 py-3 rounded-3xl " ><span id="red-heart" class="text-[#000000] font-bold mr-1">0</span> <span><img class="w-8 h-8" src="assets/heart.png" alt=""></span></div>
+            <div class="flex justify-between items-center gap-1 bg-[#41ff6b1a] px-5 py-3 rounded-3xl" ><span id="call-coin" class="text-[#000000] font-bold mr-1">100</span> <span><img class="w-6 h-6" src="assets/coin.png" alt=""></span></div>
+            <div><button  class=" bg-[#00a63e]  px-5 py-3 rounded-3xl font-semibold text-white "><span id="nav-copy">2</span> <span>Copy</span></button></div>
         </div>
     </nav>
 
@@ -38,10 +38,10 @@
 
         <div class="left-container  grid sm:grid-cols-3 gap-7 
          sm:w-7/10">
-            <div class=" p-8 card bg-white rounded-lg  shadow-xl/20">
+            <div class=" p-8 card1 bg-white rounded-lg  shadow-xl/20">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+                 <span id="card-heart1"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -50,15 +50,15 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+                <button id="copy-btn1" class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+                 <button id="call-btn1" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
-            <div class=" p-8 card bg-white rounded-lg   shadow-xl/20">
+            <div class=" p-8 card2 bg-white rounded-lg   shadow-xl/20">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+                 <span id="card-heart2"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -67,15 +67,15 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+                <button id="copy-btn2"  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+                 <button id="call-btn2" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
-            <div class=" p-8 card bg-white rounded-lg   shadow-xl/20">
+            <div class=" p-8 card3 bg-white rounded-lg   shadow-xl/20">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+                 <span id="card-heart3"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -84,15 +84,16 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+                <button id="copy-btn3" class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+                 <button id="call-btn3" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
-            <div class=" p-8 card bg-white rounded-lg   shadow-xl/20">
+            <!--card 4-->
+            <div class=" p-8 card4 bg-white rounded-lg   shadow-xl/20">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+                 <span id="card-heart4"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -101,15 +102,19 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+                <button id="copy-btn4"  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+                 <button id="call-btn4" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
-            <div class=" p-8 card bg-white rounded-lg   shadow-xl/20">
+
+            <!--card 5-->
+
+            <div class=" p-8 card5 bg-white rounded-lg   shadow-xl/20">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+
+                 <span id="card-heart5"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -118,15 +123,19 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+
+                <button id="copy-btn5"  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+
+                 <button id="call-btn5" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
-            <div class=" p-8 card bg-white rounded-lg   shadow-xl">
+               <!--card 6-->
+            <div class=" p-8 card6 bg-white rounded-lg   shadow-xl">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+
+                 <span id="card-heart6"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -135,15 +144,19 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+
+                <button  id="copy-btn6" class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+
+                 <button id="call-btn6" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
-            <div class=" p-8 card bg-white rounded-lg   shadow-xl/20">
+            <!--card 7-->
+            <div class=" p-8 card7 bg-white rounded-lg   shadow-xl/20">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+
+                 <span id="card-heart7"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -152,15 +165,19 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+
+                <button id="copy-btn7"  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+
+                 <button id="call-btn7" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
-            <div class=" p-8 card bg-white rounded-lg   shadow-xl/20">
+            <!--card 8-->
+            <div class=" p-8 card8 bg-white rounded-lg   shadow-xl/20">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+
+                 <span id="card-heart8"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -169,15 +186,20 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+
+                <button id="copy-btn8" class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+
+                 <button id="call-btn8" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
-            <div class=" p-8 card bg-white rounded-lg   shadow-xl/20">
+
+            <!--card 9-->
+            <div class=" p-8 card9 bg-white rounded-lg   shadow-xl/20">
                  <div class="flex justify-between items-center">
                  <img class="bg-[#FFE3E2] p-4 rounded-[20px]" src="assets/emergency.png" alt="">
-                 <span><i class="fa-regular fa-heart"></i></span>
+
+                 <span id="card-heart9"><i class="fa-regular fa-heart"></i></span>
            
             </div>
            
@@ -186,8 +208,10 @@
             <p><span class="h-10 text-[32px] font-bold text-[#111111]">999</span></p>
             <p class="text-[18px] text-[#5C5C5C] bg-[#F2F2F2] px-[16px] py-[6px] w-[53px] h-37px rounded-2xl mb-[24px]">All</p>
             <div class="flex justify-between  gap-1">
-                <button  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
-                 <button class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
+
+                <button id="copy-btn9"  class="bg-white border-2 border-[#D4D6D5]  py-3 flex-1 rounded-xl text-[#5C5C5C]"> <span><i class="fa-regular fa-copy"></i></span><span class="ml-[6px]">Copy</span></button>
+
+                 <button id="call-btn9" class="bg-[#00A63E] text-[#FFFFFF] py-3 flex-1 rounded-xl"> <span><i class="fa-solid fa-phone"></i></span><span class="ml-[6px]">Call</span></button>
             </div>
             
             </div>
@@ -213,7 +237,122 @@
            
 
     </div>
+    <script src="js/index.js"></script>
     
+    <script>
+     /* count increase 1++*/
+
+     function lifecount(id) {
+
+          const lifeCountElement = document.getElementById(id)
+          const oldCount =parseInt(lifeCountElement.innerText)
+          const newCount = oldCount+1
+          document.getElementById(id).innerText=newCount
+          
+           }
+
+           /* decrease 20*/
+           function decrease(id){
+               
+          const lifeCountElement = document.getElementById(id)
+          const oldCount =parseInt(lifeCountElement.innerText)
+          const newCount = oldCount-20
+          if(oldCount <20){
+               return alert('no balance')
+          }
+          document.getElementById(id).innerText=newCount
+           }
+
+           
+     /*life heart*/
+       document.getElementById('card-heart1').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+       document.getElementById('card-heart2').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+       document.getElementById('card-heart3').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+       document.getElementById('card-heart4').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+       document.getElementById('card-heart5').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+       document.getElementById('card-heart6').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+       document.getElementById('card-heart7').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+       document.getElementById('card-heart8').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+       document.getElementById('card-heart9').
+     addEventListener("click",function(){
+          lifecount('red-heart')
+           })
+
+
+     /*copy count*/
+
+     document.getElementById('copy-btn1').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+     document.getElementById('copy-btn2').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+     document.getElementById('copy-btn3').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+     document.getElementById('copy-btn4').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+     document.getElementById('copy-btn5').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+     document.getElementById('copy-btn6').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+     document.getElementById('copy-btn7').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+     document.getElementById('copy-btn8').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+     document.getElementById('copy-btn9').
+     addEventListener("click",function(){
+          lifecount('nav-copy')
+     })
+
+     /*coin*/
+     document.getElementById('call-btn1').
+     addEventListener("click",function(){
+          decrease('call-coin')
+          console.log('call btn clicked')
+     })
+
+    
+         
+ 
+    </script>
   
 </body>
 </html>
