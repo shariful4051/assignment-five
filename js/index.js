@@ -2,7 +2,7 @@ console.log(55)
  /*coin and call history*/
 
    
-     document.getElementById('call-btn1').
+    /* document.getElementById('call-btn1').
      addEventListener("click",function(){
           decrease('call-coin')
           console.log('call btn clicked')
@@ -37,5 +37,5 @@ console.log(55)
                     container1.appendChild(div)
                     }
                      
-                    })
+                    })*/
                     
